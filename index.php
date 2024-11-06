@@ -22,35 +22,35 @@
     <title>Fumacê - Home</title>
     <style>
         body {
-            background-color: #dfffe0;
-            color: #3c3c3c;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f4f7f9;
+            color: #3b4a55;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
 
         .navbar {
-            background-color: #b2f0b2;
+            background-color: #e0e7ed;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid #81c784;
+            border-bottom: 2px solid #a0b5c5;
         }
 
         .navbar-brand, .navbar-nav .nav-link {
-            color: #4a7a4a !important;
+            color: #2c536f !important;
             font-weight: bold;
             font-size: 1.2rem;
         }
 
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #2e5e2e !important;
+            color: #1a3a56 !important;
         }
 
         .carousel-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #81c784;
+            background-color: #a0b5c5;
             padding: 20px;
             border-radius: 10px;
         }
@@ -62,58 +62,58 @@
         }
 
         .card {
-            background-color: #eaffea;
-            border: 2px solid #a5d6a7;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            border: 1px solid #e0e7ed;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             width: 15rem;
         }
 
         .card:hover {
-            transform: scale(1.07);
+            transform: scale(1.05);
         }
 
         .card-title {
-            color: #2e7d32;
+            color: #2c536f;
             font-weight: bold;
         }
 
         .card-text {
-            color: #4e4e4e;
+            color: #3b4a55;
         }
 
         .card-img-top {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
 
         .report-card {
-            background-color: #eaffea;
-            border: 2px solid #a5d6a7;
-            border-radius: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e7ed;
+            border-radius: 10px;
             padding: 20px;
             margin: 20px auto;
             max-width: 600px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #b2f0b2;
-            color: #4a7a4a;
+            background-color: #e0e7ed;
+            color: #2c536f;
             padding: 20px;
             text-align: center;
-            border-top: 2px solid #81c784;
+            border-top: 2px solid #a0b5c5;
         }
 
         footer a {
-            color: #388e3c;
+            color: #1a3a56;
             text-decoration: none;
         }
 
         footer a:hover {
-            color: #2e5e2e;
+            color: #0f2a43;
         }
     </style>
 </head>
@@ -144,7 +144,7 @@
                     </div>
                 </li>
             </ul>
-            <a class="btn btn-outline-success ml-auto" href="login.php">Login</a> <!-- Botão de Login estilizado -->
+            <a class="btn btn-outline-primary ml-auto" href="login.php">Login</a>
         </div>
     </nav>
 
@@ -153,6 +153,7 @@
             <div class="carousel-item active">
                 <div class="card-carousel">
                     <div class="card">
+                        <a href="https://www.unicef.org/brazil/prevencao-e-combate-ao-aedes-aegypti" target="_blank">
                         <img src="https://st2.depositphotos.com/6222352/12316/v/450/depositphotos_123164340-stock-illustration-zika-virus-prevention.jpg" class="card-img-top" alt="Descrição da Imagem 1">
                         <div class="card-body text-center">
                             <h5 class="card-title">Prevenções</h5>
@@ -160,6 +161,7 @@
                         </div>
                     </div>
                     <div class="card">
+                        <a href="https://www.saude.ms.gov.br/dicas-simples-podem-ajudar-na-prevencao-contra-dengue-na-sua-residencia/" target="_blank">
                         <img src="https://st5.depositphotos.com/1007566/73475/v/450/depositphotos_734759832-stock-illustration-man-spraying-insecticide-dengue-control.jpg" class="card-img-top" alt="Descrição da Imagem 3">
                         <div class="card-body text-center">
                             <h5 class="card-title">Ações</h5>
@@ -167,6 +169,7 @@
                         </div>
                     </div>
                     <div class="card">
+                        <a href="https://www.dengue.pr.gov.br/Pagina/Dengue-Sintomas-e-Sinais#:~:text=Perda%20de%20peso%2C%20n%C3%A1useas%20e,persistentes%20e%20sangramento%20de%20mucosas" target="_blank">
                         <img src="https://st4.depositphotos.com/2896139/27531/v/450/depositphotos_275316124-stock-illustration-dengue-fever-symptoms-infographics.jpg" class="card-img-top" alt="Descrição da Imagem 2">
                         <div class="card-body text-center">
                             <h5 class="card-title">Sintomas</h5>
@@ -201,7 +204,7 @@
                 <label for="numero">Número:</label>
                 <input type="text" placeholder="Número" class="form-control" id="numero" name="numero" required>
             </div>
-            <button type="submit" class="btn btn-outline-success">Enviar</button> <!-- Botão de Enviar estilizado -->
+            <button type="submit" class="btn btn-outline-primary">Enviar</button>
         </form>
     </div>
 
@@ -221,8 +224,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
 </body>
 </html>
-
-
-
-
-

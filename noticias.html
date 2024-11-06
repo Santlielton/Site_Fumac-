@@ -8,30 +8,36 @@
     <title>Fumacê - Notícias</title>
     <style>
         body {
-            background-color: #fce4ec;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #3c3c3c;
+            background-color: #f4f7f9;
+            color: #3b4a55;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .navbar {
-            background-color: #b2f0b2;
+            background-color: #e0e7ed;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid #81c784;
+            border-bottom: 2px solid #a0b5c5;
         }
+
         .navbar-brand, .navbar-nav .nav-link {
-            color: #4a7a4a !important;
+            color: #2c536f !important;
             font-weight: bold;
             font-size: 1.2rem;
         }
+
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #2e5e2e !important;
+            color: #1a3a56 !important;
         }
 
         .container {
             margin-top: 2rem;
         }
+
         h1 {
-            color: #d81b60;
+            color: #462e7d;
             font-weight: bold;
             text-align: center;
         }
@@ -44,23 +50,26 @@
             padding: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .news-item h2 {
             color: #8e24aa;
         }
 
         footer {
-            background-color: #b2f0b2;
-            color: #4a7a4a;
+            background-color: #e0e7ed;
+            color: #2c536f;
             padding: 20px;
             text-align: center;
-            border-top: 2px solid #81c784;
+            border-top: 2px solid #a0b5c5;
         }
+
         footer a {
-            color: #388e3c;
+            color: #1a3a56;
             text-decoration: none;
         }
+
         footer a:hover {
-            color: #2e5e2e;
+            color: #0f2a43;
         }
     </style>
 </head>
@@ -70,7 +79,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -91,23 +100,71 @@
                     </div>
                 </li>
             </ul>
-            <a class="btn btn-outline-success ml-auto" href="login.php">Login</a> <!-- Botão de Login estilizado -->
+            <a class="btn btn-outline-primary ml-auto" href="login.php">Login</a>
         </div>
     </nav>
 
     <div class="container">
         <h1 class="my-4">Notícias</h1>
+        
         <div class="news-item">
-            <h2>Título da Notícia 1</h2>
-            <p>Descrição da notícia 1...</p>
+            <h2><a href="https://www.joinville.sc.gov.br/noticias/10-mitos-e-verdades-sobre-a-dengue/" target="_blank">10 mitos e verdades sobre a dengue</a></h2>
+            <p>Descubra a verdade por trás dos mitos mais comuns sobre a dengue e como preveni-la.</p>
         </div>
+
         <div class="news-item">
-            <h2>Título da Notícia 2</h2>
-            <p>Descrição da notícia 2...</p>
+            <h2><a href="https://gauchazh.clicrbs.com.br/saude/noticia/2024/03/parecia-que-eu-nao-ia-suportar-o-peso-do-corpo-confira-relatos-de-quem-contraiu-dengue-cltdmeotq00d701984bay63j6.html" target="_blank">Depoimentos de pessoas que enfrentaram a dengue</a></h2>
+            <p>"Parecia que eu não ia suportar o peso do corpo": confira relatos de quem contraiu dengue.</p>
         </div>
+
         <div class="news-item">
-            <h2>Título da Notícia 3</h2>
-            <p>Descrição da notícia 3...</p>
+            <h2><a href="https://www.bbc.com/portuguese/articles/cx9zwq1rev7o" target="_blank">O relato de médico que perdeu paciente para dengue pela 1ª vez em 20 anos: 'O Brasil perdeu Maria'</a></h2>
+            <p>Um médico relata a perda de um paciente devido à dengue, algo inédito após 20 anos de carreira.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www12.senado.leg.br/institucional/sis/noticias-comum/video-conheca-a-chris-guerra-sobrevivente-de-dengue-hemorragica" target="_blank">Conheça Chris Guerra, sobrevivente de dengue hemorrágica</a></h2>
+            <p>Assista ao vídeo sobre a luta de Chris Guerra para sobreviver à dengue hemorrágica.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://sergiofranco.com.br/saude/tratamento-para-dengue" target="_blank">Tratamento da dengue</a></h2>
+            <p>Saiba mais sobre os tratamentos recomendados para a dengue e como ela pode ser combatida.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www.cnnbrasil.com.br/nacional/anvisa-autoriza-ensaio-clinico-de-medicamento-oral-contra-dengue/" target="_blank">Anvisa autoriza ensaio clínico de medicamento oral contra dengue</a></h2>
+            <p>A Anvisa autorizou um ensaio clínico para testar um medicamento oral contra a dengue, uma novidade importante no combate à doença.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www.cnnbrasil.com.br/nacional/ministerio-da-saude-lanca-campanha-contra-dengue-zika-e-chikungunya/" target="_blank">Ministério da Saúde lança campanha contra dengue, zika e chikungunya</a></h2>
+            <p>O Ministério da Saúde lança uma nova campanha para conscientizar a população sobre os riscos dessas doenças.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www.cnnbrasil.com.br/nacional/ministerio-da-saude-vai-analisar-o-pedido-da-fiocruz-para-produzir-vacina-contra-dengue/" target="_blank">Ministério da Saúde vai analisar o pedido da Fiocruz para produzir vacina contra dengue</a></h2>
+            <p>O governo irá avaliar a produção de uma vacina contra a dengue por parte da Fiocruz.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www.cnnbrasil.com.br/politica/governo-lula-divulga-plano-de-acao-combate-dengue/" target="_blank">Governo Lula divulga plano de ação para combate à dengue até 2025</a></h2>
+            <p>O governo anunciou um plano de ação para combater a dengue até o ano de 2025.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://www.saude.ba.gov.br/bahiacontradengue/dengueperguntaserespostas/" target="_blank">Perguntas e respostas sobre a dengue</a></h2>
+            <p>Esclareça suas dúvidas sobre a dengue com essas perguntas e respostas detalhadas.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://medico24hs.com.br/blog/saude/as-13-perguntas-mais-frequentes-sobre-dengue" target="_blank">As 13 perguntas mais frequentes sobre a dengue</a></h2>
+            <p>Respostas às perguntas mais frequentes sobre a dengue, incluindo sintomas, prevenção e tratamento.</p>
+        </div>
+
+        <div class="news-item">
+            <h2><a href="https://greenviewgv.com.br/dengue-e-o-meio-ambiente/" target="_blank">Impacto ambiental da dengue</a></h2>
+            <p>Como a dengue afeta o meio ambiente e o que pode ser feito para reduzir esse impacto.</p>
         </div>
     </div>
 

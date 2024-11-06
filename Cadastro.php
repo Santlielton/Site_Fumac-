@@ -24,87 +24,97 @@
     <title>Fumacê - Cadastro</title>
     <style>
         body {
-            background-color: #dfffe0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #3c3c3c;
+            background-color: #f4f7f9;
+            font-family: Arial, sans-serif;
+            color: #3b4a55;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .navbar {
-            background-color: #b2f0b2;
+            background-color: #e0e7ed;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid #81c784;
+            border-bottom: 2px solid #a0b5c5;
         }
+
         .navbar-brand, .navbar-nav .nav-link {
-            color: #4a7a4a !important;
+            color: #2c536f !important;
             font-weight: bold;
             font-size: 1.2rem;
         }
+
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #2e5e2e !important;
+            color: #1a3a56 !important;
         }
 
         .card {
-            width: 100%;
             max-width: 450px;
             margin: auto;
-            background-color: #eaffea;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            border: 1px solid #e0e7ed;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
         }
+
         h1 {
-            color: #2e7d32;
+            color: #2c536f;
             font-weight: bold;
             text-align: center;
         }
+
         .form-control {
             border-radius: 10px;
         }
+
         .botao {
-            background-color: #81c784;
+            background-color: #2c536f;
             color: #fff;
             border: none;
             border-radius: 10px;
             font-weight: bold;
             transition: background-color 0.3s;
             width: 100%;
-        }
-        .botao:hover {
-            background-color: #66bb6a;
+            margin-top: 15px;
         }
 
-        .already-registered {
+        .botao:hover {
+            background-color: #1a3a56;
+        }
+
+        .register-link {
             margin-top: 15px;
             text-align: center;
         }
-        .already-registered .btn {
-            background-color: #a5d6a7;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
+
+        .register-link a {
+            color: #2c536f;
             font-weight: bold;
-            transition: background-color 0.3s;
-            width: auto;
-            padding: 10px 20px;
-            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.3s;
         }
-        .already-registered .btn:hover {
-            background-color: #81c784;
+
+        .register-link a:hover {
+            color: #1a3a56;
         }
 
         footer {
-            background-color: #b2f0b2;
-            color: #4a7a4a;
+            background-color: #e0e7ed;
+            color: #2c536f;
             padding: 20px;
             text-align: center;
-            border-top: 2px solid #81c784;
+            border-top: 2px solid #a0b5c5;
+            margin-top: auto;
         }
+
         footer a {
-            color: #388e3c;
+            color: #2c536f;
             text-decoration: none;
         }
+
         footer a:hover {
-            color: #2e5e2e;
+            color: #1a3a56;
         }
     </style>
 </head>
@@ -135,11 +145,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
-            </ul>
+            <a class="btn btn-outline-primary ml-auto" href="login.php">Login</a>
         </div>
     </nav>
 
@@ -162,8 +168,8 @@
                     </div>
                     <input type="submit" name="submit" value="Cadastrar" class="botao">
                 </form>
-                <div class="already-registered">
-                    <a href="login.php" class="btn">Já possui cadastro?</a>
+                <div class="register-link">
+                    <p>Já possui conta? <a href="login.php">Faça login aqui</a>.</p>
                 </div>
             </div>
         </div>
@@ -185,7 +191,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous" defer></script>
 </body>
 </html>
-
-
-
-

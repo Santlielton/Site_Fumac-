@@ -8,30 +8,36 @@
     <title>Fumacê - Mapa</title>
     <style>
         body {
-            background-color: #dfffe0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #3c3c3c;
+            background-color: #f4f7f9;
+            color: #3b4a55;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .navbar {
-            background-color: #b2f0b2;
+            background-color: #e0e7ed;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-bottom: 2px solid #81c784;
+            border-bottom: 2px solid #a0b5c5;
         }
+
         .navbar-brand, .navbar-nav .nav-link {
-            color: #4a7a4a !important;
+            color: #2c536f !important;
             font-weight: bold;
             font-size: 1.2rem;
         }
+
         .navbar-brand:hover, .navbar-nav .nav-link:hover {
-            color: #2e5e2e !important;
+            color: #1a3a56 !important;
         }
 
         .container {
             margin-top: 2rem;
         }
+
         h1 {
-            color: #2e7d32;
+            color: #462e7d;
             font-weight: bold;
             text-align: center;
         }
@@ -39,24 +45,26 @@
         #map {
             width: 100%;
             height: 500px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
 
         footer {
-            background-color: #b2f0b2;
-            color: #4a7a4a;
+            background-color: #e0e7ed;
+            color: #2c536f;
             padding: 20px;
             text-align: center;
-            border-top: 2px solid #81c784;
+            border-top: 2px solid #a0b5c5;
         }
+
         footer a {
-            color: #388e3c;
+            color: #1a3a56;
             text-decoration: none;
         }
+
         footer a:hover {
-            color: #2e5e2e;
+            color: #0f2a43;
         }
     </style>
 </head>
@@ -66,7 +74,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -87,7 +95,7 @@
                     </div>
                 </li>
             </ul>
-            <a class="btn btn-outline-success ml-auto" href="login.php">Login</a> <!-- Botão de Login estilizado -->
+            <a class="btn btn-outline-primary ml-auto" href="login.php">Login</a>
         </div>
     </nav>
 
@@ -95,7 +103,7 @@
         <h1>Mapa de Infestação</h1>
         <div class="map-container" style="text-align: center;">
             <iframe width="850" height="700" src="https://www.openstreetmap.org/export/embed.html?bbox=-46.57430648803712%2C-23.54402217917605%2C-46.5542221069336%2C-23.530644950597658&amp;layer=mapnik" 
-                style="border: 1px solid black; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);"></iframe><br/>
+                style="border: 1px solid black; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);"></iframe><br/>
             <small><a href="https://www.openstreetmap.org/#map=16/-23.53733/-46.56426">Ver mapa ampliado</a></small>
         </div>
     </div>
